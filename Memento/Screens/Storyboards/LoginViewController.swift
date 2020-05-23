@@ -15,4 +15,9 @@ class LoginViewController: UIViewController {
         
     }
 
+    @IBAction func logIn(_ sender: Any) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let viewController = storyBoard.instantiateViewController(identifier: "Main")
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }

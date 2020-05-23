@@ -58,7 +58,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Ruq-L9-0jc">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5H8-9C-aNM" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Main" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5H8-9C-aNM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vpg-3A-mas">
                         <autoresizingMask key="autoresizingMask"/>
