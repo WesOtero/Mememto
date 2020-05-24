@@ -12,12 +12,12 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     @IBAction func logIn(_ sender: Any) {
         let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let viewController = storyBoard.instantiateViewController(identifier: "Main")
+        let viewController = storyBoard.instantiateViewController(identifier: "Main") as UITabBarController
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

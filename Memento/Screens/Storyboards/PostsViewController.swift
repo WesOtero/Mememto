@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  PostsViewController.swift
 //  Memento
 //
 //  Created by Wesley Otero on 5/23/20.
@@ -8,11 +8,19 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-
+class PostsViewController: UIViewController {
+    
+    
+    @IBOutlet weak var titleNavBarItem: UINavigationItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.setNavigationBarHidden(true, animated: true)
+        configureNavBar()
     }
-
+    
+    func configureNavBar() {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        titleNavBarItem.title = self.title
+    }
+    
 }

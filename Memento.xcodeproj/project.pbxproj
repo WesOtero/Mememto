@@ -18,6 +18,13 @@
 		2E97E86B2479CFC500CC4DAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97E86A2479CFC500CC4DAD /* MainViewController.swift */; };
 		2E97E86D2479D19300CC4DAD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E97E86C2479D19300CC4DAD /* Login.storyboard */; };
 		2E97E86F2479D2F000CC4DAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97E86E2479D2F000CC4DAD /* LoginViewController.swift */; };
+		2E97E8712479EDDA00CC4DAD /* MemUITAbBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97E8702479EDDA00CC4DAD /* MemUITAbBarController.swift */; };
+		2E97E8742479EEDB00CC4DAD /* Posts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E97E8722479EEDA00CC4DAD /* Posts.storyboard */; };
+		2E97E8762479F7EA00CC4DAD /* NewPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E97E8752479F7EA00CC4DAD /* NewPost.storyboard */; };
+		2E97E87B2479F99100CC4DAD /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97E87A2479F99100CC4DAD /* PostsViewController.swift */; };
+		2E97E87D2479F99C00CC4DAD /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97E87C2479F99C00CC4DAD /* NewPostViewController.swift */; };
+		2E97E886247A052000CC4DAD /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97E885247A052000CC4DAD /* UserProfileViewController.swift */; };
+		2E97E889247A058F00CC4DAD /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E97E887247A058F00CC4DAD /* UserProfile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,13 @@
 		2E97E86A2479CFC500CC4DAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2E97E86C2479D19300CC4DAD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		2E97E86E2479D2F000CC4DAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2E97E8702479EDDA00CC4DAD /* MemUITAbBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemUITAbBarController.swift; sourceTree = "<group>"; };
+		2E97E8732479EEDB00CC4DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Memento/Screens/ViewController/Base.lproj/Posts.storyboard; sourceTree = "<group>"; };
+		2E97E8752479F7EA00CC4DAD /* NewPost.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewPost.storyboard; sourceTree = "<group>"; };
+		2E97E87A2479F99100CC4DAD /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		2E97E87C2479F99C00CC4DAD /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		2E97E885247A052000CC4DAD /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		2E97E888247A058F00CC4DAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Memento/Screens/ViewController/Base.lproj/UserProfile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +126,7 @@
 				2E97E8672479CF5700CC4DAD /* Screens */,
 				2E97E8452479CF2300CC4DAD /* Info.plist */,
 				2E97E83D2479CF2200CC4DAD /* Memento.xcdatamodeld */,
+				2E97E8702479EDDA00CC4DAD /* MemUITAbBarController.swift */,
 			);
 			path = Memento;
 			sourceTree = "<group>";
@@ -148,6 +163,9 @@
 			children = (
 				2E97E86E2479D2F000CC4DAD /* LoginViewController.swift */,
 				2E97E86A2479CFC500CC4DAD /* MainViewController.swift */,
+				2E97E87A2479F99100CC4DAD /* PostsViewController.swift */,
+				2E97E87C2479F99C00CC4DAD /* NewPostViewController.swift */,
+				2E97E885247A052000CC4DAD /* UserProfileViewController.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -157,6 +175,9 @@
 			children = (
 				2E97E86C2479D19300CC4DAD /* Login.storyboard */,
 				2E97E83A2479CF2200CC4DAD /* Main.storyboard */,
+				2E97E8722479EEDA00CC4DAD /* Posts.storyboard */,
+				2E97E8752479F7EA00CC4DAD /* NewPost.storyboard */,
+				2E97E887247A058F00CC4DAD /* UserProfile.storyboard */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -265,7 +286,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E97E889247A058F00CC4DAD /* UserProfile.storyboard in Resources */,
 				2E97E86D2479D19300CC4DAD /* Login.storyboard in Resources */,
+				2E97E8762479F7EA00CC4DAD /* NewPost.storyboard in Resources */,
+				2E97E8742479EEDB00CC4DAD /* Posts.storyboard in Resources */,
 				2E97E8442479CF2300CC4DAD /* LaunchScreen.storyboard in Resources */,
 				2E97E8412479CF2300CC4DAD /* Assets.xcassets in Resources */,
 				2E97E83C2479CF2200CC4DAD /* Main.storyboard in Resources */,
@@ -293,10 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E97E87B2479F99100CC4DAD /* PostsViewController.swift in Sources */,
 				2E97E83F2479CF2200CC4DAD /* Memento.xcdatamodeld in Sources */,
 				2E97E8352479CF2200CC4DAD /* AppDelegate.swift in Sources */,
 				2E97E8372479CF2200CC4DAD /* SceneDelegate.swift in Sources */,
+				2E97E8712479EDDA00CC4DAD /* MemUITAbBarController.swift in Sources */,
+				2E97E87D2479F99C00CC4DAD /* NewPostViewController.swift in Sources */,
 				2E97E86F2479D2F000CC4DAD /* LoginViewController.swift in Sources */,
+				2E97E886247A052000CC4DAD /* UserProfileViewController.swift in Sources */,
 				2E97E86B2479CFC500CC4DAD /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +375,22 @@
 				2E97E8432479CF2300CC4DAD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2E97E8722479EEDA00CC4DAD /* Posts.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E97E8732479EEDB00CC4DAD /* Base */,
+			);
+			name = Posts.storyboard;
+			sourceTree = "<group>";
+		};
+		2E97E887247A058F00CC4DAD /* UserProfile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E97E888247A058F00CC4DAD /* Base */,
+			);
+			name = UserProfile.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
