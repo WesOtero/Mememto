@@ -25,7 +25,6 @@ class PostsViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: true)
         titleNavBarItem.title = self.title
     }
-    
 }
 
 extension PostsViewController: UITableViewDelegate, UITableViewDataSource {
@@ -35,8 +34,8 @@ extension PostsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Post") as! PostTableViewCell
+        return cell
     }
     
     

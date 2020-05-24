@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E47B02F247A27D60001F7B2 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E47B02E247A27D60001F7B2 /* PostTableViewCell.swift */; };
+		2E47B032247A35B60001F7B2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E47B031247A35B60001F7B2 /* Post.swift */; };
+		2E47B034247A396F0001F7B2 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E47B033247A396F0001F7B2 /* UserProfile.swift */; };
 		2E97E8352479CF2200CC4DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97E8342479CF2200CC4DAD /* AppDelegate.swift */; };
 		2E97E8372479CF2200CC4DAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97E8362479CF2200CC4DAD /* SceneDelegate.swift */; };
 		2E97E83C2479CF2200CC4DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E97E83A2479CF2200CC4DAD /* Main.storyboard */; };
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E47B02E247A27D60001F7B2 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		2E47B031247A35B60001F7B2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2E47B033247A396F0001F7B2 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		2E97E8312479CF2200CC4DAD /* Memento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E97E8342479CF2200CC4DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E97E8362479CF2200CC4DAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +102,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E47B02C247A27900001F7B2 /* UICompoentns */ = {
+			isa = PBXGroup;
+			children = (
+				2E47B02D247A279D0001F7B2 /* ViewCells */,
+			);
+			path = UICompoentns;
+			sourceTree = "<group>";
+		};
+		2E47B02D247A279D0001F7B2 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				2E47B02E247A27D60001F7B2 /* PostTableViewCell.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
+		2E47B030247A35820001F7B2 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E47B031247A35B60001F7B2 /* Post.swift */,
+				2E47B033247A396F0001F7B2 /* UserProfile.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
 		2E97E8282479CF2100CC4DAD = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +154,8 @@
 				2E97E8362479CF2200CC4DAD /* SceneDelegate.swift */,
 				2E97E8422479CF2300CC4DAD /* LaunchScreen.storyboard */,
 				2E97E8402479CF2300CC4DAD /* Assets.xcassets */,
+				2E47B030247A35820001F7B2 /* Data Models */,
+				2E47B02C247A27900001F7B2 /* UICompoentns */,
 				2E97E8672479CF5700CC4DAD /* Screens */,
 				2E97E8452479CF2300CC4DAD /* Info.plist */,
 				2E97E83D2479CF2200CC4DAD /* Memento.xcdatamodeld */,
@@ -318,12 +351,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E97E87B2479F99100CC4DAD /* PostsViewController.swift in Sources */,
+				2E47B032247A35B60001F7B2 /* Post.swift in Sources */,
 				2E97E83F2479CF2200CC4DAD /* Memento.xcdatamodeld in Sources */,
 				2E97E8352479CF2200CC4DAD /* AppDelegate.swift in Sources */,
 				2E97E8372479CF2200CC4DAD /* SceneDelegate.swift in Sources */,
 				2E97E8712479EDDA00CC4DAD /* MemUITAbBarController.swift in Sources */,
 				2E97E87D2479F99C00CC4DAD /* NewPostViewController.swift in Sources */,
 				2E97E86F2479D2F000CC4DAD /* LoginViewController.swift in Sources */,
+				2E47B034247A396F0001F7B2 /* UserProfile.swift in Sources */,
+				2E47B02F247A27D60001F7B2 /* PostTableViewCell.swift in Sources */,
 				2E97E886247A052000CC4DAD /* UserProfileViewController.swift in Sources */,
 				2E97E86B2479CFC500CC4DAD /* MainViewController.swift in Sources */,
 			);
