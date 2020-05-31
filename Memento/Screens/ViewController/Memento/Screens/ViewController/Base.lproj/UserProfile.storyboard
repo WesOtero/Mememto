@@ -116,22 +116,33 @@
                                 <state key="normal" title="Edit Profile"/>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hsf-1P-MFm">
-                                <rect key="frame" x="10" y="413.5" width="394" height="438.5"/>
+                                <rect key="frame" x="0.0" y="413.5" width="414" height="448.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fai-e6-s2Z">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uIb-Vn-leT">
                                     <size key="itemSize" width="128" height="128"/>
+                                    <size key="estimatedItemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zeR-Om-6Af">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Picture" id="zeR-Om-6Af" customClass="PictureCollectionViewCell" customModule="Memento" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="T3d-tN-Yef">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6D95C288-B583-426F-9F74-A6416B54DA30_1_105_c" translatesAutoresizingMaskIntoConstraints="NO" id="qI3-vq-ltk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                </imageView>
+                                            </subviews>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="pictureImageView" destination="T3d-tN-Yef" id="rIE-uh-iW1"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -142,7 +153,7 @@
                             <constraint firstItem="qmB-IY-WDG" firstAttribute="top" secondItem="sNG-Mv-yZl" secondAttribute="top" id="4ia-VQ-sXR"/>
                             <constraint firstItem="qmB-IY-WDG" firstAttribute="trailing" secondItem="sNG-Mv-yZl" secondAttribute="trailing" id="5pL-Vq-JPG"/>
                             <constraint firstItem="q2I-Jm-7e8" firstAttribute="leading" secondItem="gsa-y7-2XS" secondAttribute="trailing" constant="25" id="AhP-Fr-LIm"/>
-                            <constraint firstItem="hsf-1P-MFm" firstAttribute="leading" secondItem="sNG-Mv-yZl" secondAttribute="leading" constant="10" id="BWd-cL-KkB"/>
+                            <constraint firstItem="hsf-1P-MFm" firstAttribute="leading" secondItem="sNG-Mv-yZl" secondAttribute="leading" id="BWd-cL-KkB"/>
                             <constraint firstItem="gsa-y7-2XS" firstAttribute="top" secondItem="qmB-IY-WDG" secondAttribute="bottom" constant="35" id="CCv-b8-49G"/>
                             <constraint firstItem="SRN-JI-5eu" firstAttribute="leading" secondItem="ysp-bi-4lW" secondAttribute="trailing" constant="25" id="EDM-kA-HFs"/>
                             <constraint firstItem="ysp-bi-4lW" firstAttribute="leading" secondItem="sNG-Mv-yZl" secondAttribute="leading" constant="15" id="For-VO-qqI"/>
@@ -154,18 +165,19 @@
                             <constraint firstItem="tJP-gF-lAN" firstAttribute="top" secondItem="J7y-R0-Fe5" secondAttribute="bottom" constant="15" id="JuA-3y-k5F"/>
                             <constraint firstItem="sNG-Mv-yZl" firstAttribute="trailing" secondItem="J7y-R0-Fe5" secondAttribute="trailing" constant="15" id="LPm-B1-47h"/>
                             <constraint firstItem="gsa-y7-2XS" firstAttribute="leading" secondItem="SRN-JI-5eu" secondAttribute="trailing" constant="25" id="YIy-2B-e7M"/>
-                            <constraint firstItem="sNG-Mv-yZl" firstAttribute="bottom" secondItem="hsf-1P-MFm" secondAttribute="bottom" constant="10" id="b4t-o6-5LB"/>
+                            <constraint firstItem="sNG-Mv-yZl" firstAttribute="bottom" secondItem="hsf-1P-MFm" secondAttribute="bottom" id="b4t-o6-5LB"/>
                             <constraint firstItem="J7y-R0-Fe5" firstAttribute="leading" secondItem="sNG-Mv-yZl" secondAttribute="leading" constant="15" id="bEP-O2-oH6"/>
                             <constraint firstItem="q2I-Jm-7e8" firstAttribute="top" secondItem="qmB-IY-WDG" secondAttribute="bottom" constant="35" id="igU-S8-te7"/>
                             <constraint firstItem="hsf-1P-MFm" firstAttribute="top" secondItem="tJP-gF-lAN" secondAttribute="bottom" constant="15" id="n0a-DK-ugl"/>
                             <constraint firstItem="G5r-9P-ElD" firstAttribute="leading" secondItem="sNG-Mv-yZl" secondAttribute="leading" constant="20" id="ye5-fx-pae"/>
-                            <constraint firstItem="sNG-Mv-yZl" firstAttribute="trailing" secondItem="hsf-1P-MFm" secondAttribute="trailing" constant="10" id="zJG-Kj-KeX"/>
+                            <constraint firstItem="sNG-Mv-yZl" firstAttribute="trailing" secondItem="hsf-1P-MFm" secondAttribute="trailing" id="zJG-Kj-KeX"/>
                             <constraint firstItem="G5r-9P-ElD" firstAttribute="top" secondItem="ysp-bi-4lW" secondAttribute="bottom" constant="10" id="znZ-0Z-NDe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sNG-Mv-yZl"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="yes-xg-qgU"/>
                     <connections>
+                        <outlet property="collectionView" destination="hsf-1P-MFm" id="5n6-40-KO1"/>
                         <outlet property="titleNavBarItem" destination="qj3-0l-xUC" id="z45-11-Gsj"/>
                     </connections>
                 </viewController>
@@ -175,6 +187,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="6D95C288-B583-426F-9F74-A6416B54DA30_1_105_c" width="918" height="855"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
     </resources>

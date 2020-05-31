@@ -11,6 +11,7 @@
 		2E47B032247A35B60001F7B2 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E47B031247A35B60001F7B2 /* Post.swift */; };
 		2E47B034247A396F0001F7B2 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E47B033247A396F0001F7B2 /* UserProfile.swift */; };
 		2E47B036247ACDA30001F7B2 /* PictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E47B035247ACDA30001F7B2 /* PictureCollectionViewCell.swift */; };
+		2E4BDCC82483380A00E5F1EC /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4BDCC72483380A00E5F1EC /* UIHelper.swift */; };
 		2E97E8352479CF2200CC4DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97E8342479CF2200CC4DAD /* AppDelegate.swift */; };
 		2E97E8372479CF2200CC4DAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E97E8362479CF2200CC4DAD /* SceneDelegate.swift */; };
 		2E97E83C2479CF2200CC4DAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E97E83A2479CF2200CC4DAD /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		2E47B031247A35B60001F7B2 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2E47B033247A396F0001F7B2 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		2E47B035247ACDA30001F7B2 /* PictureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionViewCell.swift; sourceTree = "<group>"; };
+		2E4BDCC72483380A00E5F1EC /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		2E97E8312479CF2200CC4DAD /* Memento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E97E8342479CF2200CC4DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E97E8362479CF2200CC4DAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,14 @@
 			path = "Data Models";
 			sourceTree = "<group>";
 		};
+		2E4BDCC6248337F600E5F1EC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2E4BDCC72483380A00E5F1EC /* UIHelper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		2E97E8282479CF2100CC4DAD = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +163,7 @@
 		2E97E8332479CF2200CC4DAD /* Memento */ = {
 			isa = PBXGroup;
 			children = (
+				2E4BDCC6248337F600E5F1EC /* Utilities */,
 				2E97E8342479CF2200CC4DAD /* AppDelegate.swift */,
 				2E97E8362479CF2200CC4DAD /* SceneDelegate.swift */,
 				2E97E8422479CF2300CC4DAD /* LaunchScreen.storyboard */,
@@ -366,6 +377,7 @@
 				2E47B02F247A27D60001F7B2 /* PostTableViewCell.swift in Sources */,
 				2E97E886247A052000CC4DAD /* UserProfileViewController.swift in Sources */,
 				2E97E86B2479CFC500CC4DAD /* MainViewController.swift in Sources */,
+				2E4BDCC82483380A00E5F1EC /* UIHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
