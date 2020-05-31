@@ -199,13 +199,13 @@
 		2E97E8672479CF5700CC4DAD /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				2E97E8692479CF6500CC4DAD /* ViewController */,
-				2E97E8682479CF5F00CC4DAD /* Storyboards */,
+				2E97E8692479CF6500CC4DAD /* Storyboards */,
+				2E97E8682479CF5F00CC4DAD /* ViewControllers */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		2E97E8682479CF5F00CC4DAD /* Storyboards */ = {
+		2E97E8682479CF5F00CC4DAD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				2E97E86E2479D2F000CC4DAD /* LoginViewController.swift */,
@@ -214,10 +214,10 @@
 				2E97E87C2479F99C00CC4DAD /* NewPostViewController.swift */,
 				2E97E885247A052000CC4DAD /* UserProfileViewController.swift */,
 			);
-			path = Storyboards;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		2E97E8692479CF6500CC4DAD /* ViewController */ = {
+		2E97E8692479CF6500CC4DAD /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				2E97E86C2479D19300CC4DAD /* Login.storyboard */,
@@ -226,7 +226,7 @@
 				2E97E8752479F7EA00CC4DAD /* NewPost.storyboard */,
 				2E97E887247A058F00CC4DAD /* UserProfile.storyboard */,
 			);
-			path = ViewController;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
