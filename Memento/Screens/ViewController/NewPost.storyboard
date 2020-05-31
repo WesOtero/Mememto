@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wne-em-v9t">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New Post-->
+        <scene sceneID="VOZ-8Q-ldO">
+            <objects>
+                <viewController title="New Post" id="wne-em-v9t" customClass="NewPostViewController" customModule="Memento" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yrB-a4-EUf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihE-Va-HyO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <items>
+                                    <navigationItem title="Title" id="oQ3-OX-PUs"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="66i-DF-kdu">
+                                <rect key="frame" x="0.0" y="832" width="414" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6f-En-nB8">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="30"/>
+                                        <state key="normal" title="Library"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtg-fa-hKm">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="30"/>
+                                        <state key="normal" title="Photo"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gOt-hX-Ea1" firstAttribute="trailing" secondItem="66i-DF-kdu" secondAttribute="trailing" id="9UL-K9-QKT"/>
+                            <constraint firstItem="ihE-Va-HyO" firstAttribute="top" secondItem="gOt-hX-Ea1" secondAttribute="top" id="9l9-S5-JeR"/>
+                            <constraint firstItem="ihE-Va-HyO" firstAttribute="leading" secondItem="gOt-hX-Ea1" secondAttribute="leading" id="MEd-H5-UdU"/>
+                            <constraint firstItem="66i-DF-kdu" firstAttribute="leading" secondItem="gOt-hX-Ea1" secondAttribute="leading" id="MZT-Wv-qEf"/>
+                            <constraint firstItem="ihE-Va-HyO" firstAttribute="trailing" secondItem="gOt-hX-Ea1" secondAttribute="trailing" id="UBG-Yq-uz7"/>
+                            <constraint firstItem="gOt-hX-Ea1" firstAttribute="bottom" secondItem="66i-DF-kdu" secondAttribute="bottom" id="vqw-J9-POG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gOt-hX-Ea1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="camera" catalog="system" id="S5J-vx-NBf"/>
+                    <connections>
+                        <outlet property="titleNavBarItem" destination="oQ3-OX-PUs" id="Bvg-ZD-kvB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lC-a4-Qbp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="846"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="96"/>
+    </resources>
+</document>
